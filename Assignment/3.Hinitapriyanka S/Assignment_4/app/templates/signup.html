@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> sign up</title>
+    <style> 
+
+        .container {   
+                padding: 25px;   
+                background-color: lightblue;  
+            }
+        
+        </style>
+</head>
+<body>
+    <form action="/signupsuccess" method="GET">
+        <h1 style="text-align:center">Sign Up</h1>
+        <hr>
+    <div class="container">
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
+    </br>
+      
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+    </br>   
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+    </br>
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    </br>      
+          
+        <button type="button" >Cancel</button>
+    </br>
+        <button type="submit" >Sign Up</button>
+    </div>
+    </form>
+</br>
+</br>
+<a style="text-align:center" href='/home'>Home</a>
+</body>
+</html>
