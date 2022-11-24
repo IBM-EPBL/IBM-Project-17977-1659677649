@@ -1,0 +1,77 @@
+#home
+{
+height:50px;
+word-spacing:1rem;
+padding-left:4%;
+padding-top:30px;
+font-size:18px;
+}
+a
+{
+text-decoration:none;
+color:black;
+}
+tr
+{
+background-color:white;
+border:Brown;
+}
+h2{
+  font-size: 2rem;
+  color:Brown;
+  text-transform: uppercase;
+  text-align: center;
+  padding:1rem 0;
+}
+.btn:hover{
+  background:rgba(102,16,16,.2);
+  color:var(--Brown);
+}
+.btn{
+  
+  background:Brown;
+  color:white;
+  padding:1rem 2rem;
+  border:.2rem solid var(--Brown);
+ 
+  font-size: 1rem;
+}
+.box{
+  width:30%;
+  padding:.5rem;
+  font-size: 1.5rem;
+  color:#333;
+  margin:.5rem 0;
+  border:.1rem solid rgba(0,0,0,.3);
+  text-transform: none;
+}
+.box:hover{
+  border-color:Brown;
+}
+h3{
+  font-size:1.5rem;
+  color:Black;
+  padding:1rem 0;
+}
+#cart-add
+{
+margin-left:30%;
+margin-right:20%;
+}
+td
+{
+border:2px solid brown;
+text-align:center;
+padding:20px;
+}
+#tab
+{
+margin-left:20%;
+margin-right:30%;
+}
+.subtotal table tr td
+{
+border:2px solid brown;
+text-align:center;
+padding:30px;
+}

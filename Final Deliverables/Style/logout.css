@@ -1,0 +1,24 @@
+#logout
+{
+background-color:brown;
+padding:20px;
+margin-left:600px;
+margin-right:600px;
+font-size:25px;
+border-radius:7px;
+text-align:center;
+
+}
+body
+{
+padding-top:100px;
+}
+a
+{
+text-decoration:none;
+color:white;
+}
+#logout:hover{
+  background:rgba(102,16,16,.2);
+  color:var(--Brown);
+}

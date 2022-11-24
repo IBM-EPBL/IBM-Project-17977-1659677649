@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+   <body>
+
+    
+   <a href="/admin1"><b>USER DETAILS</b></a>
+    <br><hr>
+
+  
+    <h2>Signup Details</h2>
+    <table border = 1>
+      <thead>
+         <td>Email</td>
+         <td>Name</td>
+         <td>Password</td>
+         <td>Conform_password</td>
+      </thead>
+      
+      {% for row in signup %}
+         <tr>
+            <td>{{row["Email"]}}</td>
+            <td>{{row["Name"]}}</td>
+            <td> {{ row["Password"]}}</td>
+            <td>{{row["Conform_Password"]}}</td>	
+         </tr>
+      {% endfor %}
+   </table>
+   <h2>login Details</h2>
+    <table border = 1>
+      <thead>
+         <td>Email</td>
+         <td>Password</td>
+      </thead>
+      
+      {% for row in login %}
+         <tr>
+            <td>{{row["Email"]}}</td>
+            
+            <td> {{ row["Password"]}}</td>
+         	
+         </tr>
+      {% endfor %}
+   </table>
+  
+   <h2>Contact Details</h2>
+   <table border = 1>
+     <thead>
+        <td>Email</td>
+        <td>Name</td>
+        <td>Number</td>
+        <td>Subject</td>
+        <td>Message</td>
+     </thead>
+     
+     {% for row in contact %}
+        <tr>
+           <td>{{row["Email"]}}</td>
+           <td>{{row["Name"]}}</td>
+           <td> {{ row["Number"]}}</td>
+           <td>{{row["Subject"]}}</td>	
+           <td>{{row["Message"]}}</td>
+        </tr>
+     {% endfor %}
+  </table>
+  <h2>Orders details</h2>
+   <table border = 1>
+     <thead>
+        <td>Email</td>
+        <td>Name</td>
+        <td>Number</td>
+        <td>Product</td>
+        <td>Address</td>
+        <td>Payment</td>
+     </thead>
+     
+     {% for row in Buy %}
+        <tr>
+           <td>{{row["Email"]}}</td>
+           <td>{{row["Name"]}}</td>
+           <td> {{ row["Number"]}}</td>
+           <td>{{row["Product"]}}</td>	
+           <td>{{row["Address"]}}</td>	
+           <td>{{row["Payment"]}}</td>
+        </tr>
+     {% endfor %}
+  </table>
+ 
+
+
+         </body>
+</html>

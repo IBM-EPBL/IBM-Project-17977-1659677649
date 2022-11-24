@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>login</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<link rel="stylesheet" href="https://fashionapp.s3.jp-tok.cloud-object-storage.appdomain.cloud/Style/login.css"/>
+
+</head>
+
+<body bgcolor="grey">
+<div style="background-color:#BABEBD" id="home">
+        
+	<a href="/home">Home</a>
+        <a href="/product">Products</a>
+        <a href="#blog">Blog</a>
+        <a href="/home">About</a>
+        <a href="/contact">Contact</a>
+	<a href="/cart"><i class="fa fa-shopping-bag"></i></a>
+
+</div>
+
+<form action="{{ url_for('logging') }}" method="POST">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="enter your email" name="Email" required/>
+        <input type="password" class="box" placeholder="enter your password" name="Password" required/>
+        <input type="submit" value="login now" class="btn" onclick="Myfunction()" name="submit"/>
+        <input type="checkbox" id="remember"/>
+        <label for="remember">remember me</label>
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have and account? <a href="/signup">register now</a></p>
+</form>
+<script>
+        function Myfunction()
+        {
+            alert("You have loggined successfully");
+        }
+    </script>
+</body>
+
+</html>

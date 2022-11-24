@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Orders</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+    <link rel="stylesheet" href="https://fashionapp.s3.jp-tok.cloud-object-storage.appdomain.cloud/Style/signup.css"/>
+</head>
+
+<body bgcolor="grey" >
+<div style="background-color:#BABEBD" id="home">
+       
+	<a href="/home">Home</a>
+        <a href="/product">Products</a>
+        <a href="#blog">Blog</a>
+        <a href="/home">About</a>
+        <a href="/contact">Contact</a>
+	<a href="/cart"><i class="fa fa-shopping-bag"></i></a>
+	<a href="/login"><i class="fa-solid fa-arrow-right-to-bracket" id="login-btn"></i></a>
+</div>
+
+
+<form action="/order" method="POST" style="position:static">
+ 
+    <div class="container">
+	<h3>Order</h3>
+	<input type="email" class="box" placeholder="enter your email" name="Email" required/>
+        <input type="Username" class="box" placeholder="enter your name" name="Name" required/>
+        <input type="password" class="box"placeholder="Enter number" name="Number" required/>
+        <input type="count" class="box" placeholder="Product count" name="Product" required/>
+        <input type="address" class="box" placeholder="Address" name="Address" required/>
+        <input type="mode" class="box" placeholder="Payment mode" name="Payment" required/>
+        <button type="button" class=btn>Cancel</button>
+   	<button type="submit" class=btn onclick="Myfunction()">Buy Now</button><br>
+        
+    
+	
+ 
+    </div>
+
+</form>
+<script>
+    function Myfunction()
+    {
+        alert("Thank You! Visit again!!");
+    }
+</script>
+</body>
+</html>
