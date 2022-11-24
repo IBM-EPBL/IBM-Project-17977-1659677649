@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name:fashion
+
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: fashion
+  template:
+    metadata:
+      labels:
+        app: fashion
+
+    spec:
+      containers:
+        - name: finaldeliver
+          image: icr.io/flaskimage/fashion
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
+              protocol: TCP
