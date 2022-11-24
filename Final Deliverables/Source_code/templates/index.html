@@ -1,0 +1,176 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart fashion recommender application</title>
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://fashionapp.s3.jp-tok.cloud-object-storage.appdomain.cloud/Style/style.css"/>
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "18d8562f-cf49-4d58-859b-3fd02cf9bdc7", // The ID of this integration.
+      region: "jp-tok", // The region your integration is hosted in.
+      serviceInstanceID: "a96cd1a0-8940-4a51-9668-99d54ef694b8", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+</head>
+
+<body bgcolor="black">
+
+<nav class="sidebar close">
+        <header>
+            
+ 		 <div class="image-text">
+                <span class="image">
+                    <i class='bx bx-category-alt icon'></i>
+                </span>
+                <div class="text logo-text">
+                    <span class="name">Categories</span>
+                   
+                </div>
+            
+             </div>
+            <i class='bx bx-chevron-right toggle'></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+
+                <li class="search-box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </li>
+
+                <ul class="menu-links">
+                    <li class="nav-link">
+                        <a href="/home">
+                            <i class='bx bx-home-alt icon' ></i>
+                            <span class="text nav-text">Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/Women">
+                           <i class="fa-solid fa-person-dress icon"></i>
+                            <span class="text nav-text">Women</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/Mens">
+                            <i class="fa-solid fa-person icon"></i>
+                            <span class="text nav-text">Men</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="/Kids">
+                            <i class="fa-solid fa-child icon"></i>
+                            <span class="text nav-text">Kids</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="#">
+                            <i class='bx bx-heart icon' ></i>
+                            <span class="text nav-text">Likes</span>
+                        </a>
+                    </li>
+
+                    
+
+                </ul>
+            </div>
+
+            <div class="bottom-content">
+                <li class="">
+                    <a href="/logout">
+                        <i class='bx bx-log-out icon' ></i>
+                        <span class="text nav-text">Logout</span>
+                    </a>
+                </li>
+
+                
+                
+            </div>
+        </div>
+
+    </nav>
+<section>
+<div style="background-color:#BABEBD" id="home">
+        
+	<b><a href="/home">Home</a>
+        <a href="/product">Products</a>
+        <a href="#blog">Blog</a>
+        <a href="#About">About</a>
+        <a href="/contact">Contact</a></b>
+	<a href="/cart"><i class="fa fa-shopping-bag"></i></a>
+	<a href="/login"><i class="fa-solid fa-arrow-right-to-bracket" id="login-btn"></i></a>
+</div>
+
+<div id="home_1">
+<img src="https://fashionapp.s3.jp-tok.cloud-object-storage.appdomain.cloud/Images/Home.jpg"/>
+</div>
+
+<div id="home_2">
+<h1>SMART FASHION RECOMMENDER <span style="color:brown">APPLICATION</span></h1>
+<h3>Outfits Always brings out our inner beauty<br><br>
+GRAB AND GO!!!</h3>
+<p id="shop">
+<a href="/signup">SHOP NOW</a>
+</p>
+</div></section>
+<section>
+<div id="About" style="background-color:#BABEBD">
+<center><br><h3 style="padding-top:40px">ABOUT US</h3>
+<h3 style="padding-left:80px;padding-bottom:20px;padding-right:20px">Welcome to shopping world!<br>
+
+We aim to offer our customers a variety of the latest products. We’ve come a long way, so we know exactly which direction to take when supplying you with high quality yet budget-friendly products. We offer all of this while providing excellent customer service and friendly support.
+
+We always keep an eye on the latest trends and put our customers’ wishes first. That is why we have satisfied customers all over the world, and are thrilled to be a part of the fashion industry.
+
+The interests of our customers are always top priority for us, so we hope you will enjoy our products as much as we enjoy making them available to you.</h3></center>
+</div>
+
+<center>        
+                <div class="icon" style="color:white"> 
+                    <b>Follow Us</b><br><br>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i> 
+                    <i class="fa-brands fa-youtube"></i> 
+                </div> </center>
+
+ 
+<div class="copyright"style="color:white"> 
+<center><p>© 2022, PNT2022TMID39615 - Smart Fashion Recommender Application </p></center> 
+</div> 
+</section>
+<script>
+      const body = document.querySelector('body'),
+      sidebar = body.querySelector('nav'),
+      toggle = body.querySelector(".toggle"),
+      searchBtn = body.querySelector(".search-box");
+       
+
+toggle.addEventListener("click" , () =>{
+    sidebar.classList.toggle("close");
+})
+
+searchBtn.addEventListener("click" , () =>{
+    sidebar.classList.remove("close");
+})
+
+    </script>
+
+
+</body>
+</html>

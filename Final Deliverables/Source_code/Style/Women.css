@@ -1,0 +1,91 @@
+section{
+  padding:10px 9%;
+}
+.heading{
+  text-align: center;
+  padding:2px;
+}
+
+.heading span{
+  font-size: 2.5rem;
+  background-color:grey;
+  color:brown;
+  border-radius: .5rem;
+  padding:0rem 1rem;
+}
+
+.heading span.space{
+  background:none;
+}
+.packages .box-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:2rem;
+}
+
+.packages .box-container .box{
+  flex:20%;
+  flex-shrink:.6;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  height:400px;
+}
+
+.packages .box-container .box img{
+  height: 50%;
+  width:100%;
+  object-fit: cover;
+}
+
+.packages .box-container .box .content{
+    padding:10px;
+  
+}
+
+.packages .box-container .box .content h3{
+  font-size:1.5rem;
+  color:#333;
+}
+
+.packages .box-container .box .content h3 i{
+  color:brown;
+}
+
+.packages .box-container .box .content p{
+  font-size:1rem;
+  color:#666;
+  margin-top:0px;
+  
+}
+
+.packages .box-container .box .content .stars i{
+  font-size:15px;
+  color:brown;
+  
+}
+
+
+
+.packages .box-container .box  span{
+  color:#666;
+  font-size:.7rem;
+  text-decoration: line-through;
+}
+.btn{
+  display: inline-block;
+  margin-top:.5rem;
+  background-color:brown;
+  color:#fff;
+  padding:.3rem 1.5rem;
+  border:.2rem solid var(--orange);
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration:none;
+}
+
+.btn:hover{
+  background:rgba(255, 165, 0,.2);
+  color:var(--orange);
+  
+}

@@ -1,0 +1,77 @@
+#home
+{
+height:50px;
+word-spacing:1rem;
+padding-left:4%;
+padding-top:30px;
+font-size:18px;
+}
+a
+{
+text-decoration:none;
+color:black;
+}
+h3{
+  font-size: 2rem;
+  color:Brown;
+  text-transform: uppercase;
+  text-align: center;
+  padding:1rem 0;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  align-items: center;
+}
+.row form{
+  flex:1 1 50rem;
+  padding:2rem;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+}
+.row form .inputBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.row form .inputBox input, .row form textarea{
+  width:40%;
+  margin:1rem 0;
+  padding:1rem;
+  font-size: 1.5rem;
+  text-color:black;
+   
+  text-transform: none;
+}
+
+.row form textarea{
+  height: 5rem;
+  resize: none;
+  width:50%;
+}
+
+.brand-container{
+  text-align: center;
+}
+.row form{
+margin-left:20%;
+margin-right:20%;
+margin-top:40%;
+background:#fff;
+position:fixed;
+}
+.inputBox:hover input
+{
+border-color:Brown;
+}
+.btn{
+  background-color:brown;
+  padding:.5rem 2rem;
+  border:.2rem solid var(--Brown);
+  font-size: 1.5rem;
+  color:white;
+  margin-left:35%;
+}
+
